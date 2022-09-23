@@ -96,3 +96,28 @@ int main()
     }
 }
 ```
+#### 7. Even Splits
+```cpp
+#include<bits/stdc++.h>
+#define ll long long
+#define int ll
+using namespace std;
+
+int32_t main()
+{
+    int t,n;
+    cin >> t;
+    while(t--) {
+        cin >> n;
+        string s;
+        cin >> s;
+        if((s[0]=='1') && (s[1]=='0') && s.size()==2) {
+            cout << s << endl;
+        }
+        else {
+            sort(s.begin(),s.end());
+            cout << s << endl;
+        }
+    }
+}
+```
