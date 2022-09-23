@@ -35,3 +35,40 @@ int main()
     return 0;
 }
 ```
+```
+#include<bits/stdc++.h>
+#define ll long long
+#define int ll
+using namespace std;
+
+int32_t main()
+{
+    int t,n,x;
+    cin >> t ;
+    while(t--) {
+        cin >> n;
+        bool flag = false;
+        int count = 0;
+        for(int i=0; i<n; i++) {
+            cin >> x ;
+            if(x<0) {
+                count++;
+            }
+            if(x==0) {
+                flag = true;
+            }
+        }
+        if(flag) {
+            cout << 0 << endl;
+        }
+        else if (count%2==0) {
+            cout << 0 << endl;
+        }
+        else {
+            cout << 1 << endl;
+        }
+    }
+    return 0;
+}
+
+```
