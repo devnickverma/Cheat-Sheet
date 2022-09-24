@@ -128,3 +128,10 @@ for _ in range(int(input())):
     n, k = map(int, input().split())
     print(1 if n%k > 0 else 0)
 '''
+
+for _ in range(int(input())):
+    n = int(input())
+    if n <= 3:
+        print(-1)
+        continue
+    print(*range(2, n+1, 2), *range(1, n+1, 2))
