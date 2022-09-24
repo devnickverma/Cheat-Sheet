@@ -121,3 +121,10 @@ int32_t main()
     }
 }
 ```
+
+###### Stick length part
+'''bash
+for _ in range(int(input())):
+    n, k = map(int, input().split())
+    print(1 if n%k > 0 else 0)
+'''
